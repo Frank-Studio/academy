@@ -1,0 +1,44 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Futura, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+body {
+    padding-top: 64px;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transition: background .2s linear;
+    &.is-dark {
+        background: #000;
+        [data-footer] {
+            color: #fff;
+            border-top-color: #222;
+        }
+    }
+}
+
+.container {
+    display: block;
+    margin: 0 auto;
+    max-width: 1440px;
+    padding: 0 32px;
+    width: 100%;
+}
+
+p,
+li {
+    font-size: 1.1rem;
+}
+
+.nav-link {
+    &.is-active {
+        border-color: #000;
+    }
+}
+
+.full-screen {
+    min-height: calc(100vh - 64px - 89px)
+}
