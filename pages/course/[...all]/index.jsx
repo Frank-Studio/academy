@@ -62,7 +62,7 @@ export default Unit
 export async function getServerSideProps(context){
 
     async function getCourse(){
-        const res = await fetch('https://frank-studio.com/intranet/graphql',{
+        const res = await fetch('https://frank-studio.co/intranet/graphql',{
             method: 'POST',
             headers: {'Content-type': 'application/json'},
             body: JSON.stringify({
@@ -87,7 +87,7 @@ export async function getServerSideProps(context){
     } 
     
     async function getUnit(courseId){
-        const res = await fetch('https://frank-studio.com/intranet/graphql',{
+        const res = await fetch('https://frank-studio.co/intranet/graphql',{
             method: 'POST',
             headers: {'Content-type': 'application/json'},
             body: JSON.stringify({

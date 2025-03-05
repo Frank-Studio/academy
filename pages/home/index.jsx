@@ -117,7 +117,7 @@ export default Home
 
 export async function getServerSideProps(context){
     async function getCourses(){
-        const res = await fetch('https://frank-studio.com/intranet/graphql',{
+        const res = await fetch('https://frank-studio.co/intranet/graphql',{
             method: 'POST',
             headers: {'Content-type': 'application/json'},
             body: JSON.stringify({
