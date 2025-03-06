@@ -69,7 +69,6 @@ export const AuthProvider = ({ children }) => {
   }
 
   const login = async ({ email, password }) => {
-    alert(NEXT_URL)
     const res = await fetch(`${NEXT_URL}api/login`, {
       method: "POST",
       headers: {
